@@ -1,8 +1,10 @@
+import { CartPage } from './controllers/cartConstroller.js'
 import { LoginPage } from './controllers/loginController.js';
-import { productPage } from './controllers/productController.js';
+import { ProductPage } from './controllers/productController.js';
 import { router } from './router/index.js';
 
 router({
-  '/': () => productPage(), // Forside
-  '/login': () => LoginPage(), // Forside
-}, '#app'); 
+  '/': () => ProductPage(), // Forside
+  '/login': () => LoginPage(), // Login
+  '/cart': () => CartPage(), // Login
+}, '#app');
