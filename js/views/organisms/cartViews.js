@@ -40,7 +40,7 @@ export const cartListHeaderView = arrColumns => {
         col.textContent = item.name
         cartHeader.append(col)
     })
-
+''
     return cartHeader
 }
 
