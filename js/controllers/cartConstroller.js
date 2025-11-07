@@ -37,10 +37,9 @@ const attachCartListEvents = (container) => {
     deleteBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             const cartId = e.target.dataset.cartid
-            removeFromCart(cartId)            
+            removeFromCart(cartId)         
         })
         
     });
-    
-    
+ 
 }
